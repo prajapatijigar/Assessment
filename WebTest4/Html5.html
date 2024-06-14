@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="./style.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+</head>
+<body>
+    <div class="container">
+        <div class="contact-us">
+            <h2>Contact Us</h2>
+        </div>
+        <div class="address-section">
+            <div class="col-30">
+                <div class="proper-location">
+                    <address>
+                        ADDRESS:<br /><br />
+                        Saint Marco Street, 6th<br />
+                        Floor, Tokyo, Japan, 123456.
+                    </address>
+                </div>
+            </div>
+            <div class="col-30">
+                <div class="information-data">
+                    <div class="call-data">
+                        <span><i class="fa-sharp fa-solid fa-square-phone"></i></span>
+                        <span>+91 1234567890</span>
+                    </div>
+                    <div class="email-data">
+                        <span><i class="fa-solid fa-envelope"></i></span>
+                        <span>example@gmail.com</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-30">
+                <div class="location-icon">
+                    <span><i class="fa-solid fa-location-dot"></i></span>
+                </div>
+            </div>
+        </div>
+        <div class="third-section">
+            <div class="col-50">
+                <form id="contactForm" onsubmit="return validateForm()">
+                  <input type="text" minlength="3" maxlength="6" id="name" placeholder="Name:" required pattern="[A-Za-z]+" />
+                  <input type="text" placeholder="Company:" />
+                    <input type="email" id="email" placeholder="Email:" required />
+                    <input type="tel" id="number" placeholder="Mobile:" required pattern="[0-9]{10}" />
+                    <textarea placeholder="Message:" cols="44" rows="5"></textarea>
+                    <button type="submit" class="send-btn">Send</button>
+                </form>
+            </div>
+            <div class="col-50">
+                <div class="map">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d34021.895618191986!2d72.51636732946693!3d23.02156503560126!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1718350050090!5m2!1sen!2sin"
+                        style="border: 0"
+                        allowfullscreen=""
+                        loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"
+                    ></iframe>
+                    <div class="icons">
+                       <span class="facebook-icon"><i class="fa-brands fa-square-facebook"></i></span>
+                       <span class="twitter-icon"><i class="fa-brands fa-square-twitter"></i></span>
+                       <span class="linkdeen-icon"><i class="fa-brands fa-linkedin"></i></span>
+                       <span class="github-icon"><i class="fa-brands fa-square-github"></i></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./core.js">
+    </script>
+</body>
+</html>
